@@ -17,9 +17,10 @@ echo 'Finished cloning'
 
 # check student code is correct file submitted
 submission=`find student-submission -name "*.java"`
-echo $submission
 testFile=`find TestListExamples.java`
-# echo $submission
+
+echo ""
+
 if [[ ! -f $submission ]] || [[ ! $submission == **/ListExamples.java* ]]
 then 
     echo "Wrong file or file name submitted"
