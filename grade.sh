@@ -53,6 +53,9 @@ then
     then
         echo "Compile error:"
         cat compileError.txt
+    else
+        echo "Failure:"
+        cat testResult.txt
     fi
 
 else
